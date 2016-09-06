@@ -1,0 +1,10 @@
+set terminal postscript landscape
+set output '|ps2pdf - draft.pdf'
+
+set xlabel 'x axis'
+set ylabel 'y axis'
+set logscale xy
+set xrange [1000: 1e7]
+set title '{god}'
+
+plot 'in/Spectrum.txt' using 1:2 ps 0.25
